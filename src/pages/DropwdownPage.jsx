@@ -18,7 +18,6 @@ function DropdownPage() {
             if (!dropdownEle.current.contains(event.target)) {
                 setIsOpen(false);
             }
-            console.log('samer')
         };
 
         document.addEventListener('click', handler, true);

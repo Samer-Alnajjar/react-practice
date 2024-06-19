@@ -12,8 +12,6 @@ const ButtonPage = () => {
 
     const parseProps = (propsString) => {
         return propsString.split(' ').reduce((acc, prop) => {
-            console.log('acc', acc)
-            console.log('prop', prop)
             acc[prop] = true;
             return acc;
         }, {});
