@@ -20,7 +20,7 @@ const ButtonPage = () => {
     const renderedBtnsPage = btns.map((btn, index) => <Button key={index} className={btn.className} {...parseProps(btn.props)}  {...btn}> {btn.label}</Button>)
 
     return (
-        <div className="flex flex-col m-20 gap-y-4">
+        <div className="flex flex-col gap-y-4">
             {renderedBtnsPage}
         </div>)
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { NavigationProvider } from "./context/navigation";
 
 import App from "./App";
-import { NavigationProvider } from "./context/navigation";
 
 const rootEl = document.getElementById("root");
 const root = ReactDOM.createRoot(rootEl);
