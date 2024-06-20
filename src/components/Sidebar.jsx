@@ -2,16 +2,18 @@ import Link from "./Link"
 
 export default function Sidebar() {
     const links = [
-        { label: 'accordion', path: '/accordion' },
-        { label: 'dropdown', path: '/dropdown' },
-        { label: 'buttons', path: '/buttons' }
+        { label: 'Dropdown', path: '/dropdown' },
+        { label: 'Accordion', path: '/accordion' },
+        { label: 'Buttons', path: '/buttons' }
     ]
 
-    const renderedLinks = links.map(link => <Link key={link.label} to={link.path}>{link.label}</Link>)
+    const renderedContent = links.map(link => {
+        return <Link key={link.label} to={link.path}>{link.label}</Link>
+    })
 
     return (
-        <div>
-            {renderedLinks}
-        </div>
+        <>
+            {renderedContent}
+        </>
     )
 }

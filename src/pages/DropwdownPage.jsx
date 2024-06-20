@@ -44,11 +44,13 @@ function DropdownPage() {
     })
 
     return (
-        <>
+        <div>
             <label htmlFor="list">Select a Color</label>
             <div ref={dropdownEle} id='list' onClick={() => setIsOpen(!isOpen)} className="border-solid border-2 border-sky-500 w-fit	flex items-center gap-2 w-20 justify-between hover:cursor-pointer">{value} <FiChevronDown /></div>
-            {isOpen && renderedList}
-        </>
+            <div>
+                {isOpen && renderedList}
+            </div>
+        </div>
     )
 }
 
