@@ -6,6 +6,7 @@ import './index.css'
 import ButtonPage from './pages/ButtonPage';
 import AccordionPage from './pages/AccordionPage';
 import DropdownPage from './pages/DropwdownPage';
+import ModalPage from './pages/ModalPage';
 import Sidebar from './components/Sidebar';
 import Route from './components/Route';
 
@@ -24,6 +25,9 @@ const App = () => {
             </Route>
             <Route to="/accordion">
                 <AccordionPage />
+            </Route>
+            <Route to="/modal">
+                <ModalPage />
             </Route>
         </div >)
 }
