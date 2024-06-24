@@ -7,6 +7,7 @@ import ButtonPage from './pages/ButtonPage';
 import AccordionPage from './pages/AccordionPage';
 import DropdownPage from './pages/DropwdownPage';
 import ModalPage from './pages/ModalPage';
+import TablePage from './pages/TablePage';
 import Sidebar from './components/Sidebar';
 import Route from './components/Route';
 
@@ -28,6 +29,9 @@ const App = () => {
             </Route>
             <Route to="/modal">
                 <ModalPage />
+            </Route>
+            <Route to="/table">
+                <TablePage />
             </Route>
         </div >)
 }
