@@ -1,42 +1,41 @@
-import Table from '../components/Table';
+import SortableTable from '../components/SortableTable';
 
 export default function TablePage() {
     const tableConfig = [
         {
             label: "Fruits",
-            func: false
+            sorted: (fruit) => fruit.name
         },
         {
             label: "Color",
-            func: false
         },
         {
-            label: "Score",
-            func: true
+            label: "Number",
+            sorted: (fruit) => fruit.number
         }
     ];
 
     const tableData = [
         {
-            fruit: 'Orange',
+            name: 'Orange',
             color: <div className="w-8 h-8 bg-yellow-200 border-2 border-yellow-200"></div>,
-            score: 5
+            number: 5
         },
         {
-            fruit: 'Apple',
+            name: 'Apple',
             color: <div className="w-8 h-8 bg-red-400 border-2 border-yellow-600"></div>,
-            score: 3
+            number: 3
         },
         {
-            fruit: 'Banana',
+            name: 'Banana',
             color: <div className="w-8 h-8 bg-yellow-400 border-2 border-yellow-600"></div>,
-            score: 1
+            number: 1
         },
         {
-            fruit: 'Lime',
+            name: 'Lime',
             color: <div className="w-8 h-8 bg-green-400 border-2 border-green-600"></div>,
-            score: 4
+            number: 4
         },
     ]
-    return <Table tableConfig={tableConfig} tableData={tableData} />
+    return <SortableTable tableConfig={tableConfig} tableData={tableData} />
 }
