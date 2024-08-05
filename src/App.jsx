@@ -10,6 +10,7 @@ import ModalPage from './pages/ModalPage';
 import TablePage from './pages/TablePage';
 import Sidebar from './components/Sidebar';
 import Route from './components/Route';
+import Counter from './components/Counter';
 
 const App = () => {
 
@@ -32,6 +33,9 @@ const App = () => {
             </Route>
             <Route to="/table">
                 <TablePage />
+            </Route>
+            <Route to="/counter">
+                <Counter initialValue={10} />
             </Route>
         </div >)
 }
